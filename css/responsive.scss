@@ -1,0 +1,132 @@
+@import'rfs_partial.scss';
+$roza:#e3c4a8;
+@media only screen and (max-width: 576px){//col-
+    .headerActive{
+        background-color: rgba(0, 0, 0, .4);
+    }
+    h1{
+        @include font-size(3rem);
+    }
+    .hero{
+        #main{
+            p{
+                @include font-size(1rem);
+            }
+        }
+    }   
+    #drzac{
+        background-color: black;
+        #navigacija{
+            .navbar-brand{
+                padding: 0;
+            }
+            #spliter{
+                width: 100%;
+            }
+            ul{
+                li:first-child{
+                height:20px;
+                }
+            }
+        }
+        }
+    #prvi{
+        margin-top: 870px;
+    }
+    .apartments{
+        #bigImage{
+            height: 288px;
+        }
+    }
+    #slider{
+        .comment{
+            @include font-size(.9rem);
+        }
+        .author{
+            @include font-size(.8rem);
+        }
+    }
+    .horizontal{
+        width: 30%;
+    }
+    #futer{
+        ul{
+            a{
+                @include font-size(1.5rem);
+                &:hover{
+                    background-color: $roza;
+                }
+            }
+        }
+    }
+    #birth{
+        label{
+            @include font-size(.7rem)
+        }
+    }
+    #confirmLabel{
+        @include font-size(.8rem)
+    }
+    button{
+        margin-bottom: 10px;
+    }
+    small{
+        @include font-size(.8rem);
+    }
+    #about{
+        top:90px;
+        margin-bottom: 90px;
+        #info{
+            li{
+                @include font-size(1rem);
+            }
+        }
+    }
+
+    .slika{
+        width: 265px;
+    }
+
+}
+@media only screen and (min-width: 576px){//col-sm
+    #info{
+        li{
+            @include font-size(.8rem);
+        }
+    }
+    .propHead{
+        @include font-size(1.5rem);
+    }
+}
+@media only screen and (min-width: 768px){//col-md
+    #info{
+        li{
+            @include font-size(1.2rem);
+        }
+    }
+    .propHead{
+        @include font-size(2rem);
+    }
+}
+@media only screen and (min-width: 992px){//col-lg
+    #info{
+        li{
+            @include font-size(.9rem);
+        }
+    }
+    .description{
+        margin-top: 20px;
+        @include font-size(.9em);
+    }
+}
+@media only screen and (min-width: 1200px){//col-xl
+    #info{
+        li{
+            @include font-size(1.2rem);
+        }
+    }
+    .description{
+        margin-top: 20px;
+        @include font-size(1em);
+    }
+}
