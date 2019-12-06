@@ -1,0 +1,309 @@
+@import'rfs_partial.scss';
+$font:'Rubik', sans-serif;
+$bela: #f7f7f7;
+$roza:#e3c4a8;
+*{
+    scroll-behavior: smooth;
+}
+a:hover{
+    text-decoration: none;
+}
+hr{
+    width: 20%;
+    height: 1px;
+    background-color: $roza;
+}
+body{
+    font-family: $font;
+}
+h1{
+    @include font-size(4.5rem);
+}
+.textBela{
+    color: $bela!important;
+}
+.linkvelicina{
+    @include font-size(1.2rem);
+}
+.headerActive{
+    background-color: rgba(0, 0, 0, .4);
+    transition: .5s;
+}
+.intro-out{
+    opacity: 0;
+    transform: translateY(130px);
+    transition: .8s all ease-in-out;
+}
+.intro-in{
+    opacity:1;
+    transform: translateY(0px);
+}
+.darker{
+    background-color: rgba(0, 0, 0, .2);
+}
+#hamburger{
+    @include font-size(1.3rem);
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+#lista1{
+    display: none;
+}
+.hero{
+    height: 100vh;
+    background-image: url('../img/slider1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    #main{
+        p{
+            @include font-size(1.4rem);
+        }
+    }
+}.top{
+    top: -70px;
+}
+.belina{
+    width: 100%;
+    height: 2000px;
+}
+.featured{
+    background-color: #f7f7f7;
+    .image{
+        background-image: url('../img/featured.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+    }
+    h2{
+        @include font-size(1.5rem);
+        margin-top: 20%;
+    }
+    p{
+        @include font-size(.95rem);
+    }
+    ul{
+        text-align: center;
+        padding-left: 0;
+        li{
+            background-color: $roza;
+            a{
+                color: white;
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+    }
+}
+#prvi{
+    margin-top: 490px;
+}
+.horizontal{
+    width: 25%;
+}
+.apartments{
+    margin-top: 2%;
+    .price{
+        left: 0px;
+        bottom: 0px;
+        background-color: #0c0c0c;
+        color: $bela;
+        padding: 1px 7px;
+        border-radius: 0px 4px 0px 4px;
+    }
+    .city{
+        left: 0px;
+        bottom: 24px;
+        background-color: $roza;
+        color: $bela;
+        border-radius: 0px 4px 0px 0px;
+        p{
+            @include font-size(1.4rem);
+        }
+        padding: 0px 5px;
+    }
+    #bigImage{
+        height: 600px;
+        background-image: url('../img/ap1.jpg');
+        background-position: 25%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        &:hover{
+            transform: scale(1.05);
+            transition: .8s all;
+        }
+    }
+    .ap1{
+        height: 288px;
+        background-image: url('../img/ap2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        &:hover{
+            transform: scale(1.05);
+            transition: .8s all;
+        }
+    }
+    .ap2{
+        height: 288px;
+        background-image: url('../img/ap3.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        &:hover{
+            transform: scale(1.05);
+            transition: .8s all;
+        }
+    }
+}
+#slider{
+    background-color: rgba(0, 0, 0, .35);
+    .comment{
+        @include font-size(1.4rem);
+        margin-top: 15%;
+    }
+    .author{
+        margin: 10% 0 5% 0;
+        @include font-size(1.3rem);
+    }
+    .o-0{
+        opacity: 0;
+        transition: .8s all ease-in-out;
+    }
+    .o-1{
+        opacity: 1;
+        transition: .8s all ease-in-out; 
+    }
+    #previous{
+        color: rgba(255, 255, 255, .75);
+        position: absolute;
+        bottom: 40%;
+        left: 20px;
+        z-index: 1;
+        font-size: 20px;
+    }
+    #next{
+        color:rgba(255, 255, 255, .75);
+        position: absolute;
+        bottom: 40%;
+        right: 20px;
+        z-index: 1;
+        font-size: 20px;
+    }
+}
+#futer{
+    background-color: $roza;
+    ul{
+        a{
+            color: $bela;
+            @include font-size(1.5rem);
+            &:hover{
+                background-color: #f1ceaf;
+                transition: .15s all ease-in;
+            }
+        }
+    }
+}
+#copy{
+    @include font-size(.9rem);
+}
+#autor{
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    right: 50px;
+    background-color: $bela;
+    border-radius: 50%;
+    z-index: 1;
+        i{
+            color:$roza;
+            @include font-size(2rem);
+        }
+}
+.modal{
+    overflow: visible!important;
+    height: auto;
+    position: relative;
+}
+#contact{
+margin-top: 105px;
+@include font-size(2.5rem);
+}
+#getInTouch{
+    @include font-size(1.8rem);
+}
+.warning{
+    @include font-size(.9rem);
+}
+#birthday{
+    @include font-size(1.2rem);
+}
+#birth{
+    label{
+        @include font-size(1rem)
+    }
+}
+#confirmLabel{
+    @include font-size(1rem)
+}
+button{
+    // margin-bottom: 50px;
+    background-color: $roza!important;
+    color: $bela!important;
+    &:focus{
+        box-shadow: none!important;
+    }
+}
+#first{
+    margin-top: 80px;
+}
+label[for='textarea']{
+    @include font-size(1.4rem)
+}
+.form-control:focus, .form-control-sm:focus
+ {   
+  border-color: $roza!important;
+  box-shadow: 0 1px 1px $roza inset, 0 0 8px $roza;
+  outline: 0 none;
+}
+#info{
+    list-style-type: none;
+    li{
+        @include font-size(.8rem);
+    }
+}
+#apartments{
+    margin-top: 100px;
+    @include font-size(3.2rem);
+}
+.propHead{
+margin-top: 15%;
+margin-bottom: 0;
+@include font-size(2rem);
+}
+.specification{
+    list-style-type: none;
+}
+.description{
+    margin-top: 20px;
+    @include font-size(1em);
+}
+// .tekstic{
+//     background-color: green;
+// }
+.pozGray{
+    background-color: gray;
+}
+.gray{
+    background-color:#cecece;
+    transition: .5s ease-in;
+}
+.pocetna{
+    background-color:$bela;
+    transition: .3s ease-in;
+}
