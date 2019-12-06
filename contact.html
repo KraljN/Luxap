@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="keywords" content="apartments, form, message, contact, luxap"/>
+    <meta name="description" content="Get in touch with us easly, contact Luxap now."/>
+    <title>Luxap | Contact us</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <link rel="stylesheet" href="css/responsive.min.css"/>
+    <script src="https://kit.fontawesome.com/88934ffa22.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid" id="drzac">
+            <nav class="navbar px-md-5 py-4 fixed-top darker" id="navigacija">
+                <div class="container d-flex flex-column flex-md-row">
+                        <div class="row flex-row w-100 justify-content-around align-items-center">
+                            <a class="navbar-brand textBela text-uppercase text-md-center mr-0" href="index.html">Luxap</a>
+                            <i class="fas fa-bars d-md-none" id="hamburger"></i>
+                            <ul class="navbar-nav flex-column text-center flex-sm-row mr-0 mr-sm-5 d-md-flex d-none" id="lista2">
+                                    <li class="nav-item">
+                                    </li>
+                                    <li class="nav-item mx-3 ">
+                                        <a class="nav-link textBela linkvelicina" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item mx-3">
+                                        <a class="nav-link textBela linkvelicina" href="apartments.html">Apartments</a>
+                                    </li>
+                                    <li class="nav-item mx-3">
+                                        <a class="nav-link textBela linkvelicina" href="contact.html">Contact</a>
+                                    </li>
+                                    <li class="nav-item mx-3">
+                                        <a class="nav-link textBela linkvelicina" href="dokumentacija.pdf" target="_blank">Documentation</a>
+                                    </li>
+                                    </ul>
+                        </div>
+                    <ul class="navbar-nav flex-column text-center flex-sm-row mr-0 mr-sm-5 d-md-none" id="lista1">
+                    <li class="nav-item">
+                    </li>
+                    <li class="nav-item mx-3 ">
+                        <a class="nav-link textBela linkvelicina" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link textBela linkvelicina" href="apartments.html">Apartments</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link textBela linkvelicina" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link textBela linkvelicina" href="dokumentacija.pdf" target="_blank">Documentation</a>
+                    </li>
+                    </ul>
+                </div>
+            </nav>
+    </div>
+<div class="row d-relative">
+     
+        <div class="position-fixed shadow d-flex justify-content-center align-items-center" id="autor"><i class="fas fa-address-card"></i></div>
+    <div id="about" class="modal col-11 col-sm-8 col-lg-6">
+            <div class="row text-center d-block">
+                <h3>About me</h3>
+                <hr class="w-25 mt-2 mb-3"/>
+            </div>
+            <div class="row">
+                <div class="col-10 col-sm-5 mx-auto">
+                    <img src="img/autor.jpg" alt="autor" class="img-fluid rounded"/>
+                </div>
+                <div class="col-10 col-sm-7 d-flex mx-auto align-items-center justify-content-center">
+                    <ul id='info' class="p-0 m-0">
+                        <li class="mb-3 mt-3 mt-sm-0">Name: Nikola Kralj</li>
+                        <li class="my-3">Email: nikolakralj9@gmail.com</li>
+                        <li class="my-3">Index number: 76/18</li>
+                        <li class="my-3">Year of study: Second</li>
+                        <li class="mt-3">Site made for purpose of Web Programing 1 subject </li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+</div>
+<div class="row justify-content-center w-100 m-0"><h1 class="text-center" id="contact">Contact us for more informations</h1></div>
+<div class="row justify-content-center w-100 m-0"><h2 class="text-center mt-3" id="getInTouch">Get in touch with us easly</h2></div>
+<hr class="horizontal"/>
+<div class="col-lg-8 mx-auto">
+        <form action="form.php" method="POST" id="forma">
+                <div class="row" id="first">
+                    <div class="col-9 mx-auto col-lg-6 mt-3 mt-sm-4">
+                    <input type="text" class="form-control  mb-1" placeholder="First name" id="tbName">
+                    <span class=" ml-1 text-danger warning d-none">Enter first name in requested form (exp. John)</span>
+                    </div>
+                    <div class="col-9 mx-auto col-lg-6 mt-3 mt-sm-4 ">
+                    <input type="text" class="form-control mb-1" placeholder="Last name" id="tbLast">
+                    <sspan class=" ml-1 text-danger warning d-none">Enter last name in requested form (exp. Johnes)</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-9 mx-auto col-lg-6 mt-3 mt-sm-4">
+                        <input type="text" class="form-control mb-1" placeholder="Email" id="tbEmail"/>
+                        <span class=" ml-1 text-danger warning d-none">Enter email in requested form (exp. john@gmail.com)</span>
+                        </div>
+                        <div class="col-9 mx-auto col-lg-6 mt-4 pt-2 text-center">
+                        <span id="role" class="mx-auto d-block d-sm-inline text-center mb-2 mb-sm-0">Your role:</span>
+                            <span class="d-block d-sm-inline text-center">
+                                <input class="form-check-input ml-1 ml-sm-4" type="radio" name="rbRole" id="rb1" value="renter"/>
+                                <label class="form-check-label ml-4 ml-sm-5" for="renter">
+                          Renter
+                                </label>
+                        <input class="form-check-input ml-1 ml-sm-4" type="radio" name="rbRole" id="rb2" value="owner"/>
+                        <label class="form-check-label ml-4 ml-sm-5" for='owner'>
+                          Owner
+                        </label>
+                        </span>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-9 mx-auto col-lg-5 mt-3">
+                        <label id="birthday">Your birthdate:</label>
+                    </div>
+                    <div class="col-12 mx-auto col-lg-7 d-flex flex-column mt-3 justify-content-center">
+                        <div id="birth" class="mb-2">
+                            <label class="form-check-label">Day</label>
+                            <select class="form-control-sm mx-2" id="day">
+                            </select>
+                            <label class="form-check-label">Month</label>
+                            <select class="form-control-sm mx-2" id="month">
+                            </select>
+                            <label class="form-check-label">Year</label>
+                            <select class="form-control-sm ml-2" id="year">
+                            </select>
+                        </div>
+                        <span class="text-danger warning d-none" id="valid">Enter valid date</span>
+                    </div>
+                </div>
+                <div class="row mt-1 mt-sm-4 text-center">
+                    <div class="col-12 col-sm-4">
+                        <label for="textarea" class="mt-4">Message:</label>
+                    </div>
+                    <div class="col-8 mx-auto">
+                            <textarea class="form-control mb-2" id="textarea" rows="3"></textarea>
+                            <span class="text-danger warning d-none">Fill the message</span>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-7 col-lg-12 mx-auto mt-2 mt-sm-5 text-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="confirm" id="confirm"/>
+                                    <label class="form-check-label" for="confirm" id="confirmLabel">
+                                        I confirm that I filled in all fields.
+                                    </label>
+                                    <br/>
+                                    <small class="text-danger d-none">You didn't fill all fields, or you didn't fill them correctly</small>
+                                </div>
+                        </div>
+    
+                    </div>
+                <div class="row d-flex justify-content-center my-5">
+                        <button class="btn" disabled='disabled' type="submit" id="submint">Button</button>
+                </div>
+            </form>
+</div>
+    <div class="row w-100 my-4 mx-0" id="futer">
+        <div class="col-xl-6 col-lg-8 col-md-9 col-sm-10 col-11 mx-auto p-0">
+            <ul class="d-flex flex-column align-items-center flex-sm-row list-unstyled m-0">
+                <a href="https://www.facebook.com" target="_blank" class="col-3 text-center py-3 fafa"><li><i class="fab fa-facebook-f"></i></li></a>
+                <a href="https://twitter.com" target="_blank" class="col-3 text-center py-3 fafa"><li><i class="fab fa-twitter"></i></li></a>
+                <a href="https://www.instagram.com" target="_blank" class="col-3 text-center py-3 fafa"><li><i class="fab fa-instagram"></i></li></a>
+                <a href="https://www.linkedin.com" target="_blank" class="col-3 text-center py-3 fafa"><li><i class="fab fa-linkedin-in"></i></li></a>
+            </ul>
+        </div>
+    </div>
+    <div class="row justify-content-center w-100 m-0">
+        <p id="copy">&copy;Nikola Kralj 2019 | All rights reserved</p>
+    </div>
+    <script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script src="js/main.js" type="text/javascript"></script>
+<script src="js/jquery.js" type="text/javascript"></script>
+</body>
+</html>
