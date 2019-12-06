@@ -275,6 +275,3 @@ if(lokacija.endsWith("/contact.html")){
         }
     })
 }
-if(lokacija.endsWith("/apartments.html")){
-
-}
